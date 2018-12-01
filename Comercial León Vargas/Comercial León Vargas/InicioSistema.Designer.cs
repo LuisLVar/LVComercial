@@ -30,12 +30,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMostrar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnPagos = new System.Windows.Forms.Button();
+            this.btnCompras = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -52,12 +53,22 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btnMostrar);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(65, 190);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(414, 233);
             this.panel1.TabIndex = 1;
+            // 
+            // btnMostrar
+            // 
+            this.btnMostrar.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMostrar.Location = new System.Drawing.Point(133, 135);
+            this.btnMostrar.Name = "btnMostrar";
+            this.btnMostrar.Size = new System.Drawing.Size(123, 48);
+            this.btnMostrar.TabIndex = 1;
+            this.btnMostrar.Text = "MOSTRAR";
+            this.btnMostrar.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -69,16 +80,6 @@
             this.button1.Text = "NUEVO";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(133, 135);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(123, 48);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "MOSTRAR";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -92,38 +93,50 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.btnPagos);
+            this.panel2.Controls.Add(this.btnCompras);
             this.panel2.Location = new System.Drawing.Point(634, 190);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(414, 233);
             this.panel2.TabIndex = 4;
             // 
-            // button5
+            // btnPagos
             // 
-            this.button5.Font = new System.Drawing.Font("Perpetua Titling MT", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(69, 40);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(288, 54);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "COMPRAS AL CRÉDITO";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnPagos.Font = new System.Drawing.Font("Perpetua Titling MT", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPagos.Location = new System.Drawing.Point(69, 135);
+            this.btnPagos.Name = "btnPagos";
+            this.btnPagos.Size = new System.Drawing.Size(288, 49);
+            this.btnPagos.TabIndex = 1;
+            this.btnPagos.Text = "PAGO A PROVEEDORES";
+            this.btnPagos.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnCompras
             // 
-            this.button6.Font = new System.Drawing.Font("Perpetua Titling MT", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(69, 135);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(288, 49);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "PAGO A PROVEEDORES";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnCompras.Font = new System.Drawing.Font("Perpetua Titling MT", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCompras.Location = new System.Drawing.Point(69, 40);
+            this.btnCompras.Name = "btnCompras";
+            this.btnCompras.Size = new System.Drawing.Size(288, 54);
+            this.btnCompras.TabIndex = 0;
+            this.btnCompras.Text = "COMPRAS AL CRÉDITO";
+            this.btnCompras.UseVisualStyleBackColor = true;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(1027, 27);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(77, 28);
+            this.btnSalir.TabIndex = 5;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // InicioSistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1134, 521);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
@@ -142,11 +155,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnMostrar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnPagos;
+        private System.Windows.Forms.Button btnCompras;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
