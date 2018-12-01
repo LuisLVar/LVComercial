@@ -8,3 +8,14 @@ C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\Comercial León Vargas\C
 C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\Comercial León Vargas\Comercial León Vargas\obj\Debug\Comercial León Vargas.csproj.CoreCompileInputs.cache
 C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\Comercial León Vargas\Comercial León Vargas\obj\Debug\Comercial León Vargas.exe
 C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\Comercial León Vargas\Comercial León Vargas\obj\Debug\Comercial León Vargas.pdb
+C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\LVComercial\Comercial León Vargas\Comercial León Vargas\bin\Debug\Comercial León Vargas.exe.config
+C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\LVComercial\Comercial León Vargas\Comercial León Vargas\bin\Debug\Comercial León Vargas.exe
+C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\LVComercial\Comercial León Vargas\Comercial León Vargas\bin\Debug\Comercial León Vargas.pdb
+C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\LVComercial\Comercial León Vargas\Comercial León Vargas\obj\Debug\Comercial León Vargas.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\LVComercial\Comercial León Vargas\Comercial León Vargas\obj\Debug\Comercial_León_Vargas.InicioSistema.resources
+C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\LVComercial\Comercial León Vargas\Comercial León Vargas\obj\Debug\Comercial_León_Vargas.Login.resources
+C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\LVComercial\Comercial León Vargas\Comercial León Vargas\obj\Debug\Comercial_León_Vargas.Properties.Resources.resources
+C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\LVComercial\Comercial León Vargas\Comercial León Vargas\obj\Debug\Comercial León Vargas.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\LVComercial\Comercial León Vargas\Comercial León Vargas\obj\Debug\Comercial León Vargas.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\LVComercial\Comercial León Vargas\Comercial León Vargas\obj\Debug\Comercial León Vargas.exe
+C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\LVComercial\Comercial León Vargas\Comercial León Vargas\obj\Debug\Comercial León Vargas.pdb
