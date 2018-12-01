@@ -12,10 +12,8 @@ namespace Comercial_León_Vargas
 {
     public partial class InicioSistema : Form
     {
-        Login login;
-        public InicioSistema(Login login)
+        public InicioSistema()
         {
-            this.login = login;
             InitializeComponent();
         }
 
@@ -26,23 +24,7 @@ namespace Comercial_León_Vargas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
 
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            DialogResult respuesta = MessageBox.Show("¿Seguro que desea salir del sistema?", "Comercial León Vargas", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (respuesta == DialogResult.Yes)
-            {
-                login.Show();
-                login.Activate();
-                this.Hide();
-            }
-            else if (respuesta == DialogResult.No)
-            {
-
-            }
         }
     }
 }
