@@ -31,12 +31,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMostrar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnPagos = new System.Windows.Forms.Button();
             this.btnCompras = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnNuevoProv = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -53,8 +53,9 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.btnNuevoProv);
             this.panel1.Controls.Add(this.btnMostrar);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(65, 190);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(414, 233);
@@ -69,17 +70,7 @@
             this.btnMostrar.TabIndex = 1;
             this.btnMostrar.Text = "MOSTRAR";
             this.btnMostrar.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(133, 46);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 48);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "NUEVO";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
             // label2
             // 
@@ -93,6 +84,7 @@
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.btnPagos);
             this.panel2.Controls.Add(this.btnCompras);
             this.panel2.Location = new System.Drawing.Point(634, 190);
@@ -131,6 +123,17 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // btnNuevoProv
+            // 
+            this.btnNuevoProv.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoProv.Location = new System.Drawing.Point(133, 46);
+            this.btnNuevoProv.Name = "btnNuevoProv";
+            this.btnNuevoProv.Size = new System.Drawing.Size(123, 48);
+            this.btnNuevoProv.TabIndex = 2;
+            this.btnNuevoProv.Text = "NUEVO";
+            this.btnNuevoProv.UseVisualStyleBackColor = true;
+            this.btnNuevoProv.Click += new System.EventHandler(this.btnNuevoProv_Click);
+            // 
             // InicioSistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -141,6 +144,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "InicioSistema";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Comercial León Vargas";
@@ -156,11 +160,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnMostrar;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnPagos;
         private System.Windows.Forms.Button btnCompras;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnNuevoProv;
     }
 }

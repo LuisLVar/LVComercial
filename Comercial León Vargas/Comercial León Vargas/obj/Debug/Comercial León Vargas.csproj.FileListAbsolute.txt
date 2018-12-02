@@ -19,3 +19,7 @@ C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\LVComercial\Comercial Le
 C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\LVComercial\Comercial León Vargas\Comercial León Vargas\obj\Debug\Comercial León Vargas.csproj.CoreCompileInputs.cache
 C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\LVComercial\Comercial León Vargas\Comercial León Vargas\obj\Debug\Comercial León Vargas.exe
 C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\LVComercial\Comercial León Vargas\Comercial León Vargas\obj\Debug\Comercial León Vargas.pdb
+C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\LVComercial\Comercial León Vargas\Comercial León Vargas\obj\Debug\Comercial_León_Vargas.MostrarProveedor.resources
+C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\LVComercial\Comercial León Vargas\Comercial León Vargas\obj\Debug\Comercial_León_Vargas.NuevoProveedor.resources
+C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\LVComercial\Comercial León Vargas\Comercial León Vargas\bin\Debug\MySql.Data.dll
+C:\Users\USER\Desktop\Proyectos y Trabajo\Tío Giovanni\LVComercial\Comercial León Vargas\Comercial León Vargas\obj\Debug\Comercial León Vargas.csproj.CopyComplete

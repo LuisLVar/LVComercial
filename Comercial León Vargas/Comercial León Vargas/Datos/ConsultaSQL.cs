@@ -10,7 +10,7 @@ namespace Comercial_León_Vargas.Datos
 {
     class ConsultaSQL
     {
-        public void insertarUsuario(int carnet, string nombre, string fecha_nacimiento, string email, string telefono, string user, string password, string Palabra_clave, char rol)
+        public void insertarProveedor(string nombre, string nit)
         {
             //crear un objeto conexion
             MySqlConnection conectar = Conexion.getConexion();
@@ -31,35 +31,12 @@ namespace Comercial_León_Vargas.Datos
 
                 //Pondremos tipo text y enviar sql
                 comando.CommandType = System.Data.CommandType.Text;
-                if (rol == 'O' || rol == 'A')
-                {
-                    comando.CommandText = "INSERT INTO USUARIO VALUES(@a, @b, @c, @d, @e, @f, @g, @h, @i);";
-                }
-                else if (rol == 'E')
-                {
-                    comando.CommandText = "INSERT INTO ESTUDIANTE VALUES(@a, @b, @c, @d, @e, @f, @g, @h, @i);";
-                }
-                else if (rol == 'I')
-                {
-                    Console.WriteLine("Entro Instructor");
-                    comando.CommandText = "INSERT INTO INSTRUCTOR VALUES(@a, @b, @c, @d, @e, @f, @g, @h, @i);";
-                }
-                else
-                {
-                    Console.WriteLine("Rol de usuario incorrecto");
-                }
 
+                comando.CommandText = "INSERT INTO PROVEEDORES(nombre, nit) VALUES(@a, @b);";
+                
                 //Agregar los parametros
-                comando.Parameters.AddWithValue("@a", carnet);
-                comando.Parameters.AddWithValue("@b", nombre);
-                comando.Parameters.AddWithValue("@c", fecha_nacimiento);
-                comando.Parameters.AddWithValue("@d", email);
-                comando.Parameters.AddWithValue("@e", telefono);
-                comando.Parameters.AddWithValue("@f", user);
-                comando.Parameters.AddWithValue("@g", password);
-                comando.Parameters.AddWithValue("@h", Palabra_clave);
-                comando.Parameters.AddWithValue("@i", rol);
-
+                comando.Parameters.AddWithValue("@a", nombre);
+                comando.Parameters.AddWithValue("@b", nit);
 
                 //Ejecutar comando sql
                 try
@@ -81,7 +58,7 @@ namespace Comercial_León_Vargas.Datos
             }
         }
 
-        public void modificarInsumo(string idMod, string id, string nombre, string tipo)
+        public void EditarProveedor(string nombreMod, string nombre, string nit)
         {
 
             //crear un objeto conexion
@@ -101,37 +78,30 @@ namespace Comercial_León_Vargas.Datos
                 //Pondremos tipo text y enviar sql
                 comando.CommandType = System.Data.CommandType.Text;
                 //Agregar los parametros
-                comando.Parameters.AddWithValue("@a", idMod);
-                comando.Parameters.AddWithValue("@b", id);
-                comando.Parameters.AddWithValue("@c", nombre);
-                comando.Parameters.AddWithValue("@d", tipo);
+                comando.Parameters.AddWithValue("@a", nombreMod);
+                comando.Parameters.AddWithValue("@b", nombre);
+                comando.Parameters.AddWithValue("@c", nit);
 
                 if (nombre != "")
                 {
-                    comando.CommandText = "UPDATE INSUMO SET nombre = @c where id_insumo = @a";
+                    comando.CommandText = "UPDATE PROVEEDORES SET nombre = @b where nombre = @a";
                     insertQuery(comando);
                 }
-                if (id != "")
+                if (nit != "")
                 {
-                    comando.CommandText = "UPDATE INSUMO SET id_insumo = @b where id_insumo = @a";
+                    comando.CommandText = "UPDATE PROVEEDORES SET nit = @c where nombre = @a";
                     insertQuery(comando);
                 }
-                if (tipo != "")
-                {
-                    comando.CommandText = "UPDATE INSUMO SET tipo = @d where id_insumo = @a";
-                    insertQuery(comando);
-                }
-
 
 
                 //Ejecutar comando sql
                 conectar.Close();
-                MessageBox.Show(null, "Insumo modificado exitosamente", "Modificar Insumo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(null, "Proveedor modificado exitosamente", "Editar Proveedor", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             catch (Exception e)
             {
-                MessageBox.Show(null, "Error al modificar insumo, verificar datos", "Modificar Insumo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(null, "Error al modificar proveedor, verificar datos", "Editar Proveedor", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Console.WriteLine(e.ToString());
                 Console.WriteLine("Entro catch2");
             }
@@ -149,6 +119,46 @@ namespace Comercial_León_Vargas.Datos
                 Console.WriteLine("Entro catch1, " + e.ToString());
 
             }
+        }
+
+        public void EliminarProveedor(string nombre)
+        {
+            //crear un objeto conexion
+            MySqlConnection conectar = Conexion.getConexion();
+
+            try
+            {
+                //Abrir conexion
+                conectar.Open();
+
+                //crear objeto de tipo MySqlCommand
+                MySqlCommand comando = new MySqlCommand();
+
+                //Enviar la cadena conexión
+                comando.Connection = conectar;
+
+
+                //Pondremos tipo text y enviar sql
+                comando.CommandType = System.Data.CommandType.Text;
+
+                //Agregar los parametros
+                comando.Parameters.AddWithValue("@a", nombre);
+
+
+                comando.CommandText = "DELETE FROM PROVEEDORES WHERE nombre = @a";
+                insertQuery(comando);
+                MessageBox.Show(null, "Proveedor eliminado exitosamente", "Eliminar Proveedor", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //Ejecutar comando sql
+                conectar.Close();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(null, "Proveedor no elimnado, verificar datos", "Eliminar Proveedor", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Console.WriteLine(e.ToString());
+                Console.WriteLine("Entro catch2");
+            }
+
         }
     }
 }

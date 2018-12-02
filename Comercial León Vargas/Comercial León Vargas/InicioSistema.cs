@@ -12,23 +12,19 @@ namespace Comercial_León_Vargas
 {
     public partial class InicioSistema : Form
     {
+        NuevoProveedor nuevo;
         Login login;
+        MostrarProveedor mostrar;
         public InicioSistema(Login login)
         {
+            mostrar = new MostrarProveedor();
+            nuevo = new NuevoProveedor();
             this.login = login;
             InitializeComponent();
+            this.ControlBox = false;
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-
-        }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -43,6 +39,30 @@ namespace Comercial_León_Vargas
             {
 
             }
+        }
+
+        private void btnNuevoProv_Click(object sender, EventArgs e)
+        {
+            nuevo.Show();
+            nuevo.Activate();
+        }
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            if (mostrar.IsDisposed){
+                mostrar = new MostrarProveedor();
+                mostrar.Show();
+                mostrar.Activate();
+            }
+            else
+            {
+                mostrar.Dispose();
+                mostrar = new MostrarProveedor();
+                mostrar.Show();
+                mostrar.Activate();
+            }
+
+
         }
     }
 }

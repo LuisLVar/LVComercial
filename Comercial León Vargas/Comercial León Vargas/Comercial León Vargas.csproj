@@ -63,6 +63,18 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="MostrarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarProveedor.Designer.cs">
+      <DependentUpon>MostrarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoProveedor.Designer.cs">
+      <DependentUpon>NuevoProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proveedor.cs" />
@@ -71,6 +83,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarProveedor.resx">
+      <DependentUpon>MostrarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoProveedor.resx">
+      <DependentUpon>NuevoProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
